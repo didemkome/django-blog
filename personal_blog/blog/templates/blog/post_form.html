@@ -1,0 +1,15 @@
+{% load i18n %}
+
+<h1>
+    {% if object %}
+        {% trans "Update post" %}
+    {% else %}
+        {% trans "Create new post" %}
+    {% endif %}
+</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="{% if object %}{% trans "Update" %}{% else %}{% trans "Add new" %}{% endif %}">     
+</form> 

@@ -1,0 +1,13 @@
+<h1>Son Eklenen Makaleler ({{ NOW|date:"F Y" }})</h1>
+
+<pre>{{ TEST_VAL|center:100 }}</pre>
+
+<pre>FOO: {{ FOO|default:"yok" }}</pre>
+
+<pre>{{ POSTS }}</pre>
+
+<ul>
+{% for post in POSTS %}
+    <li>{{ post.title }}</li>
+{% endfor %}
+</ul> 

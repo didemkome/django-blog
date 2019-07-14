@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load humanize %}
+
+<h1>{% trans "Latest Posts" %}</h1>
+
+{% if messages %}
+    {% for message in messages %}
+    <pre style="padding:1em; border:1px solid black;">{{ message }}</pre>
+    {% endfor %}
+{% endif %}
+
+{{ "1"|apnumber }}, 
+{{ "1"|ordinal }}
+
+<P>
+    <a href="{% url 'post-create' %}">{% trans "Add new post" %}</a>
+</P>
+
+<ul>
+    {% for post in object_list %}
+        <li>
+            ({{ post.status }})<a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            ({{ post.update_at }}) < {{ post.update_at|naturaltime }} >
+            [ <a href="{{ post.get_update_url }}">{% trans "edit" %} </a> ]
+            [ <a href="{{ post.get_delete_url }}">{% trans "delete" %} </a> ]
+        </li>
+    {% endfor %}
+</ul>
