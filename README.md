@@ -7,7 +7,7 @@ Blog application with Django that allows users to create, edit, and delete posts
 - [Pip] (https://pip.pypa.io/en/stable/)
 After Python Installation we need to install virtualenv, this is not a dependency of Django, but it is advised to create separate virtual environments for different projects. By using virtual environments, applications can run in their own ‘sandbox’ in isolation of other Python applications.
 - Install virtual environment: ``` $ python -m virtualenv env ```
-- Activate virtual environment: 
+- Activate virtual environment:/ 
 On Windows: 
 ``` $ .\env\Scripts\activate ``` 
 On macOS and Linux:
