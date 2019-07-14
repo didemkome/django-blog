@@ -24,8 +24,8 @@ On macOS and Linux:
 - Django ``` $ pip install Django ```
 
 ## How to run?
-Run migrations: ``` $ python manage.py migrate ```
-Run development server: ``` $ python manage.py runserver ```
+Run migrations: ``` $ python manage.py migrate ```  
+Run development server: ``` $ python manage.py runserver ```  
 
 ## License
 This project is licensed under the MIT [MIT](https://choosealicense.com/licenses/mit/) License
