@@ -28,4 +28,4 @@ Run migrations: ``` $ python manage.py migrate ```
 Run development server: ``` $ python manage.py runserver ```  
 
 ## License
-This project is licensed under the MIT [MIT](https://choosealicense.com/licenses/mit/) License
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License
